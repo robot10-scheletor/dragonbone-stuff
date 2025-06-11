@@ -2,6 +2,10 @@ print("This file will be run at load time!")
 
 local MP = minetest.get_modpath("dragonbone_stuff")
 
+dofile(MP.."/nodes.lua")
+
+dofile(MP.."/decorations.lua")
+
 if minetest.get_modpath("3d_armor") then
 	dofile(MP.."/armor.lua")
 end
